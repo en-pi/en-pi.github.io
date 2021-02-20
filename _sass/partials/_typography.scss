@@ -1,0 +1,193 @@
+%text {
+  color: $text-color;
+  font: {
+    family: $base-font-family;
+    size: 14 * $to-rems + rem;
+    weight: $light;
+  }
+  letter-spacing: .05rem;
+  line-height: 24 * $to-rems + rem;
+}
+
+%headlinetext {
+  color: $text-color;
+  font-family: $header-font-family;
+  font-weight: $fw-black;
+  letter-spacing: 2 * $to-rems + rem;
+  margin-bottom: 1rem;
+}
+
+%headertext {
+  color: $header-text-color;
+  font: {
+    family: $header-alt-font-family;
+    size: 24 * $to-rems + rem;
+    weight: $header-font-weight;
+  }
+  letter-spacing: 2 * $to-rems + rem;
+}
+
+.site-title {
+  @extend %headertext;
+}
+
+h1 {
+  @extend %headlinetext;
+  font-size: 2.5rem;
+
+  @media screen and (min-width: $breakpoint-tablet-portrait + 0px) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  @extend %headlinetext;
+  font-size: 2rem;
+
+  a {
+    color: $darker-yellow;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet-portrait + 0px) {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  @extend %headlinetext;
+  font-size: 1.5rem;
+  line-height: 32 * $to-rems + rem;
+}
+
+h4 {
+  @extend %headlinetext;
+  font-size: 1.25rem;
+}
+
+h5 {
+  @extend %headlinetext;
+  font-size: 1rem;
+}
+
+h6 {
+  @extend %headlinetext;
+  font-size: 1rem;
+  line-height: 24 * $to-rems + rem;
+}
+
+p {
+  @extend %text;
+  padding-bottom: 28 * $to-rems + rem;
+
+  > a {
+    color: $link-color;
+    text-decoration: underline;
+
+    &:visted {
+      color: $visited-link-color;
+    }
+
+    &:hover {
+      color: $visited-link-color;
+    }
+  }
+}
+
+blockquote {
+  border-left: 4 * $to-rems + rem solid lighten($text-color, 20);
+  color: lighten($text-color, 20);
+  font-style: italic;
+  margin-bottom: 16 * $to-rems + rem;
+  padding-left: 28 * $to-rems + rem;
+
+  > :last-child {
+    padding-bottom: 0;
+  }
+}
+
+strong {
+  font-weight: $fw-bold;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-bottom: 32 * $to-rems + rem;
+  padding-left: 2rem;
+}
+
+ol {
+  display: block;
+  list-style-type: decimal;
+  margin-bottom: 32 * $to-rems + rem;
+  padding-left: 2rem;
+}
+
+ul ul,
+ol ul {
+  list-style-type: circle;
+}
+
+ul ul ul,
+ol ul ul,
+ol ol ul {
+  list-style-type: square;
+}
+
+li {
+  @extend %text;
+  display: list-item;
+}
+
+dl {
+  @extend %text;
+  display: block;
+  margin-bottom: 32 * $to-rems + rem;
+}
+
+dt {
+  font-weight: $fw-bold;
+}
+
+dd {
+  padding-left: 2rem;
+}
+
+%menutext {
+  @extend %headertext;
+  font: {
+    family: $header-font-family;
+    weight: $regular;
+  }
+}
+
+.header__menu-top {
+  @extend %menutext;
+}
+
+.drawer__container {
+  @extend %menutext;
+}
+
+.header__title {
+  //text-shadow: 0 2px 1px $shadow-grey;
+}
+
+.header__switch-lang-btn {
+  @extend %headertext;
+}
+
+.content__info > p,
+.content__project-item > p {
+  @extend %text;
+
+  @media screen and (min-width: $breakpoint-tablet-portrait + 0px) {
+    font-size: 24 * $to-rems + rem;
+    line-height: 1.8;
+    padding: 12 * $to-rems + rem 0;
+  }
+}

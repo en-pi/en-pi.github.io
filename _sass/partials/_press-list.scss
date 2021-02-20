@@ -1,0 +1,84 @@
+.press-list {
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    justify-content: flex-start;
+  }
+
+  border-bottom-color: $circle-white;
+  border-bottom-style: solid;
+  border-bottom-width: 1 * $to-rems + rem;
+  justify-content: center;
+  margin-bottom: 80 * $to-rems + rem;
+  padding-bottom: 40 * $to-rems + rem;
+
+  h3 {
+    min-height: 64 * $to-rems + rem;
+
+  }
+
+  li {
+    background-color: $white;
+    display: inline;
+  }
+
+  &__title {
+    color: $color-font-section-press;
+    padding: 0 28 * $to-rems + rem;
+
+    &--home {
+      min-height: 64 * $to-rems + rem;
+      padding: 0 20 * $to-rems + rem;
+    }
+  }
+}
+
+.press-article {
+  @include cols($colspan: 1, $total-cols: 1);
+
+  // @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+  //   flex: 0 1 50%;
+  //   max-width: 50%;
+  // }
+
+  @media screen and (min-width: $breakpoint-tablet-portrait + 0px) {
+    @include cols($colspan: 6);
+    max-width: 50%;
+  }
+
+  // @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+  //   @include cols($colspan: 3);
+  //   max-width: 25%;
+  // }
+
+  // max-width: 300 * $to-rems + rem;
+
+  &-div {
+    background-color: $white;
+    border-radius: 3px;
+    box-shadow: 0 7px 12px $shadow-grey;
+    display: block;
+    margin: 28 * $to-rems + rem;
+    padding: 28 * $to-rems + rem;
+
+    &__title {
+      color: $default-color;
+    }
+
+    &__meta {
+      justify-content: flex-end;
+      padding-right: 20 * $to-rems + rem;
+    }
+
+    p {
+      font-size: 12 * $to-rems + rem;
+      letter-spacing: 3 * $to-rems + rem;
+    }
+
+    &__author {
+      font-weight: $fw-bold;
+    }
+  }
+}
+
+.in-project {
+  min-height: 0;
+}
