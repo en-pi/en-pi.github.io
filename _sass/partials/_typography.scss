@@ -2,26 +2,26 @@
   color: $text-color;
   font: {
     family: $base-font-family;
-    size: 14 * $to-rems + rem;
-    weight: $light;
+    size: 1rem;
+    weight: $regular;
   }
-  letter-spacing: .05rem;
-  line-height: 24 * $to-rems + rem;
+  letter-spacing: .03rem;
+  line-height: 1.6rem;
 }
 
 %headlinetext {
   color: $text-color;
-  font-family: $header-font-family;
-  font-weight: $fw-black;
-  letter-spacing: 2 * $to-rems + rem;
+  font-family: $base-font-family;
+  font-weight: $fw-bold;
+  letter-spacing: 1 * $to-rems + rem;
   margin-bottom: 1rem;
 }
 
 %headertext {
   color: $header-text-color;
   font: {
-    family: $header-alt-font-family;
-    size: 24 * $to-rems + rem;
+    family: $header-font-family;
+    size: 40 * $to-rems + rem;
     weight: $header-font-weight;
   }
   letter-spacing: 2 * $to-rems + rem;
@@ -45,7 +45,7 @@ h2 {
   font-size: 2rem;
 
   a {
-    color: $darker-yellow;
+    color: $link-color;
   }
 
   @media screen and (min-width: $breakpoint-tablet-portrait + 0px) {
@@ -61,12 +61,14 @@ h3 {
 
 h4 {
   @extend %headlinetext;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  color: $link-color;
 }
 
 h5 {
   @extend %headlinetext;
   font-size: 1rem;
+  letter-spacing: 0.03rem;
 }
 
 h6 {
