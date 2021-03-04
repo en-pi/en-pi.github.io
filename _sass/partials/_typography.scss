@@ -96,6 +96,12 @@ p {
   }
 }
 
+footer {
+  h5, p, a, a:hover{
+    color: $white;
+  }
+}
+
 blockquote {
   border-left: 4 * $to-rems + rem solid lighten($text-color, 20);
   color: lighten($text-color, 20);
@@ -170,27 +176,4 @@ dd {
 
 .header__menu-top {
   @extend %menutext;
-}
-
-.drawer__container {
-  @extend %menutext;
-}
-
-.header__title {
-  //text-shadow: 0 2px 1px $shadow-grey;
-}
-
-.header__switch-lang-btn {
-  @extend %headertext;
-}
-
-.content__info > p,
-.content__project-item > p {
-  @extend %text;
-
-  @media screen and (min-width: $breakpoint-tablet-portrait + 0px) {
-    font-size: 24 * $to-rems + rem;
-    line-height: 1.8;
-    padding: 12 * $to-rems + rem 0;
-  }
 }
