@@ -33,6 +33,10 @@ sass:
 
 github: [metadata]
 
+# Collections
+collections:
+  - texts
+
 # theme: minima
 plugins:
 #  - jekyll-feed
