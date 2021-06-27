@@ -1,7 +1,7 @@
 ---
 ---
 ##### Impressum
-Angaben gemäß §5 TMG)  
+(Angaben gemäß §5 TMG)  
 **Numcamp GmbH**  
 c/o Factory Works GmbH  
 Lohmühlenstraße 65  
