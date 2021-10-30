@@ -7,8 +7,8 @@ $enpi-blue: #0094FF;
 $dark-cyan: #1d9694;
 $prussian-blue: #253156;
 
-$pure-yellow: #ff0;
-$darker-yellow: #ffde00;
+$lemon-glacier: #EEFE01;
+$gun-metal: #0C2D37;
 
 $white: #fff;
 $grey: #aaa;
@@ -18,13 +18,13 @@ $black: #000;
 $default-color: $black;
 $default-background-color: $white;
 
-$highlight-color01: $enpi-blue;
+$highlight-color01: $gun-metal;
 $highlight-color02: $black;
-$highlight-color03: $highlight-color02;
+$highlight-color03: $white;
 
-$text-color: $black;
-$link-color: $enpi-blue;
-$visited-link-color: $link-color;
+$text-color: $highlight-color01;
+$link-color: $highlight-color01;
+$visited-link-color: $highlight-color03;
 
 $header-bg-color:  $white;
 $header-text-color: $highlight-color01;

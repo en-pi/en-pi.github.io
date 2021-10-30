@@ -83,7 +83,7 @@ p {
   padding-bottom: 28 * $to-rems + rem;
 
   > a {
-    color: $link-color;
+    color: $text-color;
     text-decoration: underline;
 
     &:visted {

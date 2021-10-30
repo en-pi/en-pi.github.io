@@ -22,17 +22,27 @@
 }
 
 .button {
-  background-color: $highlight-color01;
-  border-radius: 0.4rem;
-  border: none;
+  // background-color: $highlight-color01;
+  border-radius: 0.5rem;
+  border: .2rem solid $text-color;
   display: inline-block;
-  color: $white;
+  // color: $white;
   font-family: $base-font-family;
   font-size: 1rem;
   font-weight: $fw-bold;
   margin: 1.5rem 0 4rem;
-  padding: 1.5rem 2.5rem;
+  padding: 0.27rem 1.95rem;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+
+  &:hover {
+    background: $text-color; // hier kann was rein, wenn es einen hover-Effekt geben soll!
+    
+    p {
+      a {
+        color: $white;
+      }
+    }
+  }
 }
