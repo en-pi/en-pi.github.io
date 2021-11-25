@@ -10,16 +10,49 @@
     @include cols($colspan: 6);
   }
 
-  padding: 2rem;
+  padding: 4.5rem 2rem;
   min-width: 0;
+  min-height: 50rem;
 
   &__footer {
 
   }
 }
 
+.hero-section {
+  padding: 2rem;
+  min-width: 0;
+}
+
+.highlight-bg {
+  background-color: $highlight-color02;
+}
+
+.bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+
 .material-icons-outlined.enpi-blue {
   color: $highlight-color01;
+}
+
+blockquote::before {
+  content: "“";
+  font-family: $headline-font-family;
+  font-style: normal;
+  font-size: 16rem;
+  //background-image: url('/assets/img/check_circle_outline-black-18dp.svg');
+  //background-size: contain;
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  left: -0.8rem;
+  top: 4rem;
+  margin-right: 0.5rem;
+  margin-top: -6rem;
 }
 
 ul {

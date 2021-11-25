@@ -1,38 +1,45 @@
 {% assign texts = site.texts %}
 
-<div class="row">
-  <div class="enpi-section">
-
-    {%- comment -%} section01.md {%- endcomment -%}
-    {{ texts[0].content }}  
-
-  </div>
-  <div class="enpi-section">
-    <picture>
-      <source media="(max-width: 899px)" srcset="/assets/img/enpi_tablet-phone-small_228w.jpg, /assets/img/enpi_tablet-phone-small_455w.jpg 2x">
-      <source media="(max-width: 900px)" srcset="/assets/img/enpi_tablet-phone_427w.jpg, /assets/img/enpi_tablet-phone_854w.jpg 2x">
-      <img src="/assets/img/enpi_tablet-phone_427w.jpg" alt="EnPI Interface auf einem Tablet und einem Smartphone">
-    </picture>
+<div class="highlight-bg">
+  <div class="row">
+    <div class="hero-section">
+      {%- comment -%} section01.md {%- endcomment -%}
+      {{ texts[0].content }}  
+    </div>
   </div>
 </div>
-
-<div class="row row-right">
-  <div class="enpi-section">
-
-    {%- comment -%} section03.md {%- endcomment -%}
-    {{ texts[1].content }}
-
+  <div class="row">
+    <div class="enpi-section">
+      {{ texts[1].content }}  
+    </div>
+    <div class="enpi-section">
+      <picture>
+        <source media="(max-width: 899px)" srcset="/assets/img/enpi_tablet-phone-small_228w.jpg, /assets/img/enpi_tablet-phone-small_455w.jpg 2x">
+        <source media="(max-width: 900px)" srcset="/assets/img/enpi_tablet-phone_427w.jpg, /assets/img/enpi_tablet-phone_854w.jpg 2x">
+        <img src="/assets/img/enpi_tablet-phone_427w.jpg" alt="EnPI Interface auf einem Tablet und einem Smartphone">
+      </picture>
+    </div>
   </div>
-  <div class="enpi-section">
 
-    {%- comment -%} section04.md {%- endcomment -%}
-    {{ texts[2].content }}
-
+<div class="highlight-bg">
+  <div class="row">
+    <div class="enpi-section">
+      {%- comment -%} section03.md {%- endcomment -%}
+      {{ texts[2].content }}
+    </div>
+    <div class="enpi-section bottom">
+      <div class="container">
+      {%- comment -%} section04.md {%- endcomment -%}
+      {{ texts[3].content }}
+      </div>
+    </div>
   </div>
+</div>
+<div class="row">
   <div class="enpi-section">
     
     {%- comment -%} section05.md {%- endcomment -%}
-    {{ texts[3].content }}
+    {{ texts[4].content }}
 
   </div>
 </div>

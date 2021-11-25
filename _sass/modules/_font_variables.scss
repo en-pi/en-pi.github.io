@@ -1,16 +1,17 @@
 // =====================
-// Font variables
+// Font variables   
 // =====================
 
 // Font weights
 $light: 300;
 $regular: 400;
+$fw-semibold: 600;
 $fw-bold: 700;
 $fw-black: 900;
 
 // Base Font
 $base-font-family: 'Open Sans', sans-serif;
-$base-font-weight: $light;
+$base-font-weight: $regular;
 $base-font-size: 12 * $to-rems;
 $base-line-height: 1.5;
 
@@ -19,8 +20,15 @@ $fixed-font-family: monospace;
 $fixed-font-size: 1rem;
 $fixed-line-height: $base-line-height;
 
-// Headings
+
+// Headlines
 $header-font-family: 'Archivo Black', sans-serif;
 $header-font-weight: $regular;
 $header-font-size: 40 * $to-rems;
 $header-line-height: 1.4;
+
+// Headlines
+$headline-font-family: 'Archivo Black', sans-serif;
+$headline-font-weight: $regular;
+$headline-font-size: 40 * $to-rems;
+$headline-line-height: 1.4;
