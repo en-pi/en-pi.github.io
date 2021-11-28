@@ -37,12 +37,7 @@
   cursor: pointer;
 
   &:hover {
-    background: $text-color; // hier kann was rein, wenn es einen hover-Effekt geben soll!
-    
-    p {
-      a {
-        color: $white;
-      }
-    }
+    background: $text-color; // hier kann was rein, wenn es einen hover-Effekt geben soll! 
+    color: $white;
   }
 }

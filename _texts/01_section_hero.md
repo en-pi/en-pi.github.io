@@ -11,6 +11,7 @@
 <br>
 <br>
 <br>
+
 #### Klimaziele erreichen geht nur gemeinsam!
 
 {% include mail_button.html text="Jetzt loslegen" %}

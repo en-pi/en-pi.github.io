@@ -5,7 +5,8 @@
     size: 1.5rem;
     weight: $regular;
   }
-  line-height: 32 * $to-rems + rem;
+  letter-spacing: 1.5 * $to-rems + rem;
+  line-height: 34 * $to-rems + rem;
 }
 
 %headlinetext {
@@ -98,7 +99,9 @@ p {
 
 footer {
   h5, p, a, a:hover{
-    color: $white;
+    font-size: 1rem;
+    letter-spacing: 0rem;;
+    line-height: 1.5rem;
   }
 }
 

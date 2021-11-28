@@ -12,10 +12,11 @@
 
   padding: 4.5rem 2rem;
   min-width: 0;
-  min-height: 50rem;
+}
 
-  &__footer {
-
+main {
+  .enpi-section {
+    min-height: 100vh;
   }
 }
 
@@ -27,6 +28,16 @@
 .highlight-bg {
   background-color: $highlight-color02;
 }
+
+.highlight-bg-half {
+  background: linear-gradient(180deg, $highlight-color02 50%, $white 50%);
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    background: linear-gradient(90deg, $highlight-color02 50%, $white 50%);
+  }
+}
+
+
 
 .bottom {
   display: flex;
