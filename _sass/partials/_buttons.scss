@@ -28,10 +28,10 @@
   display: inline-block;
   // color: $white;
   font-family: $base-font-family;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: $fw-semibold;
   margin: 1.5rem 0;
-  padding: 1rem 3.5rem;
+  padding: 0.5rem 1.5rem;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -39,5 +39,11 @@
   &:hover {
     background: $text-color; // hier kann was rein, wenn es einen hover-Effekt geben soll! 
     color: $white;
+  }
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 1.5rem;
+    padding: 1rem 3.5rem;
+
   }
 }

@@ -2,11 +2,17 @@
   color: $text-color;
   font: {
     family: $base-font-family;
-    size: 1.5rem;
+    size: 1rem;
     weight: $regular;
   }
   letter-spacing: 1.5 * $to-rems + rem;
-  line-height: 34 * $to-rems + rem;
+  line-height: 24 * $to-rems + rem;
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 1.5rem; 
+    line-height: 34 * $to-rems + rem;
+
+  }
 }
 
 %headlinetext {
@@ -29,6 +35,14 @@
 
 .site-title {
   @extend %headertext;
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 80 * $to-rems + rem;
+  }
+
+  @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+    font-size: 160 * $to-rems + rem;
+  }
 }
 
 h1 {
@@ -44,26 +58,34 @@ h2 {
   @extend %text;
   font-size: 1.25rem;
   font-weight: $fw-bold;
-  line-height: 50 * $to-rems + rem;
+  line-height: 32 * $to-rems + rem;
 
-  @media screen and (min-width: $breakpoint-tablet-portrait + 0px) {
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
     font-size: 2.5rem;
+    line-height: 50 * $to-rems + rem;
   }
 }
 
 h3 {
   @extend %headlinetext;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   letter-spacing: .03rem;
-  //line-height: 32 * $to-rems + rem;
+
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 40 * $to-rems + rem; 
+  }
 }
 
 h4 {
   @extend %text;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: $fw-semibold;
-  line-height: 32 * $to-rems + rem;
+  line-height: 24 * $to-rems + rem;
 
+  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+    font-size: 24 * $to-rems + rem; 
+    line-height: 32 * $to-rems + rem;
+  }
 }
 
 h5 {

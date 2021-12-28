@@ -3,10 +3,10 @@
   @include cols($colspan: 1, $total-cols: 1);
 
   @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
-    flex: 0 0 50%;
   }
 
   @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+    flex: 0 0 50%;
     @include cols($colspan: 6);
   }
 
@@ -16,7 +16,11 @@
   &-logos {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-end;
+    align-content: space-around;
+
+    @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+      align-content: flex-end;
+    }
   }
 }
 
@@ -33,6 +37,7 @@
   &-1 {
     background: url(/assets/img/IHB-Logo.png);
     background-repeat: no-repeat;
+    background-size: contain;
     height: 79px;
     width: 162px;
   }
@@ -40,6 +45,7 @@
   &-2 {
     background: url(/assets/img/BetterTogether_Logo.png);
     background-repeat: no-repeat;
+    background-size: contain;
     height: 110px;
     width: 162px;
   }
@@ -47,6 +53,7 @@
   &-3 {
     background: url(/assets/img/1441.png);
     background-repeat: no-repeat;
+    background-size: contain;
     height: 116px;
     width: 162px;
   }
@@ -54,6 +61,7 @@
   &-4 {
     background: url(/assets/img/Logo_Partner.png);
     background-repeat: no-repeat;
+    background-size: contain;
     height: 111px;
     width: 162px;
   }
@@ -61,6 +69,7 @@
   &-5 {
     background: url(/assets/img/SWN.png);
     background-repeat: no-repeat;
+    background-size: contain;
     height: 64px;
     width: 357px;
   }
@@ -84,14 +93,18 @@ main {
 .highlight-bg-half {
   background: linear-gradient(180deg, $highlight-color02 50%, $white 50%);
 
-  @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+  @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
     background: linear-gradient(90deg, $highlight-color02 50%, $white 50%);
   }
 }
 
 .bottom {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+
+  @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
+    align-content: flex-end;
+  }
 }
 
 
@@ -116,9 +129,11 @@ blockquote::before {
   margin-top: -6rem;
 }
 
+
+
 ul {
   list-style: none;
-  margin: 0 0 0 2.8rem;
+  margin: 0 0 0 4rem;
   padding: 0;
 
   li {
@@ -127,13 +142,19 @@ ul {
 
   li::before {
     content: "";
-    background-image: url('/assets/img/check_circle_outline-black-18dp.svg');
-    background-size: contain;
+    background-image: url('/assets/img/Rectangle822.svg');
+    background-size: cover;
     display: inline-block;
     width: 2rem;
-    height: 2rem;
+    height: 1.09rem;
     position: relative;
-    top: 1.3rem;
-    margin-right: 0.5rem;
+    margin-right: 0.7rem;
+    left: -1rem;
+    top: 0.2rem;
+
+    @media screen and (min-width: $breakpoint-phone-landscape + 0px) {
+      margin-right: 0.5rem;
+      top: 0;
+    }
   }
 }
