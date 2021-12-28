@@ -9,15 +9,15 @@
   }
 
   @media screen and (min-width: $breakpoint-tablet-portrait + 0px) {
-    @include row($width: $breakpoint-tablet-portrait, $if-max: true);
+    @include row($width: $breakpoint-tablet-portrait, $if-max: false);
   }
 
   @media screen and (min-width: $breakpoint-tablet-landscape + 0px) {
-    @include row($width: $breakpoint-tablet-landscape, $if-max: true);
+    @include row($width: $breakpoint-tablet-landscape, $if-max: false);
   }
 
   @media screen and (min-width: $breakpoint-desktop-big + 0px) {
-    @include row($width: $breakpoint-desktop-big, $if-max: true);
+    @include row($width: $breakpoint-desktop-big, $if-max: false);
   }
 }
 

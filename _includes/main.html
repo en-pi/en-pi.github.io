@@ -12,11 +12,11 @@
     <div class="enpi-section">
       {{ texts[1].content }}  
     </div>
-    <div class="enpi-section">
-      <picture>
-        <source media="(max-width: 899px)" srcset="/assets/img/enpi_tablet-phone-small_228w.jpg, /assets/img/enpi_tablet-phone-small_455w.jpg 2x">
-        <source media="(max-width: 900px)" srcset="/assets/img/enpi_tablet-phone_427w.jpg, /assets/img/enpi_tablet-phone_854w.jpg 2x">
-        <img src="/assets/img/enpi_tablet-phone_427w.jpg" alt="EnPI Interface auf einem Tablet und einem Smartphone">
+    <div class="enpi-section screenshot">
+      <picture class="enpi-screenshot">
+        <source media="(max-width: 320px)" srcset="/assets/img/Screen_App_320.png, /assets/img/Screen_App_320@2x.png 2x">
+        <source media="(min-width: 321px)" srcset="/assets/img/Screen_App_1440.png">
+        <img src="/assets/img/Screen_App_1440.png" alt="EnPI Interface auf einem Tablet und einem Smartphone">
       </picture>
     </div>
   </div>  
@@ -37,9 +37,14 @@
 </div>
 <div class="row">
   <div class="enpi-section">
-      
     {%- comment -%} section05.md {%- endcomment -%}
     {{ texts[4].content }}
-
+  </div>
+  <div class="enpi-section enpi-section-logos">
+    <div class="network-logo network-logo-1"></div>
+    <div class="network-logo network-logo-2"></div>
+    <div class="network-logo network-logo-3"></div>
+    <div class="network-logo network-logo-4"></div>
+    <div class="network-logo network-logo-5"></div>
   </div>
 </div>

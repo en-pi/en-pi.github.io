@@ -12,6 +12,58 @@
 
   padding: 4.5rem 2rem;
   min-width: 0;
+
+  &-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+}
+
+.screenshot {
+  display: flex;
+  justify-content: end;
+  padding: 4.5rem 0 4.5rem 3rem;
+}
+
+.network-logo {
+  flex: 1 1 auto;
+  margin: 1rem;
+
+  &-1 {
+    background: url(/assets/img/IHB-Logo.png);
+    background-repeat: no-repeat;
+    height: 79px;
+    width: 162px;
+  }
+
+  &-2 {
+    background: url(/assets/img/BetterTogether_Logo.png);
+    background-repeat: no-repeat;
+    height: 110px;
+    width: 162px;
+  }
+
+  &-3 {
+    background: url(/assets/img/1441.png);
+    background-repeat: no-repeat;
+    height: 116px;
+    width: 162px;
+  }
+
+  &-4 {
+    background: url(/assets/img/Logo_Partner.png);
+    background-repeat: no-repeat;
+    height: 111px;
+    width: 162px;
+  }
+
+  &-5 {
+    background: url(/assets/img/SWN.png);
+    background-repeat: no-repeat;
+    height: 64px;
+    width: 357px;
+  }
 }
 
 main {
@@ -36,8 +88,6 @@ main {
     background: linear-gradient(90deg, $highlight-color02 50%, $white 50%);
   }
 }
-
-
 
 .bottom {
   display: flex;
