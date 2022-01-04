@@ -81,6 +81,28 @@ main {
   }
 }
 
+.lang-select {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+  margin: 0 1rem;
+}
+
+.lang-select-button {
+  @extend %text;
+  font-weight: $fw-bold;
+  font-size: 48 * $to-rems + rem;
+  margin: 0.5rem;
+  padding: 0.5rem 0.7rem 0.9rem;
+}
+
+.selected {
+  background-color: $highlight-color01;
+  border-radius: 1.5rem;
+  color: $white;
+}
+
 .hero-section {
   padding: 2rem;
   min-width: 0;
@@ -108,18 +130,11 @@ main {
   }
 }
 
-
-.material-icons-outlined.enpi-blue {
-  color: $highlight-color01;
-}
-
 blockquote::before {
   content: "“";
   font-family: $headline-font-family;
   font-style: normal;
   font-size: 16rem;
-  //background-image: url('/assets/img/check_circle_outline-black-18dp.svg');
-  //background-size: contain;
   display: inline-block;
   width: 2rem;
   height: 2rem;
@@ -129,8 +144,6 @@ blockquote::before {
   margin-right: 0.5rem;
   margin-top: -6rem;
 }
-
-
 
 ul {
   list-style: none;
