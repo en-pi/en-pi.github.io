@@ -2,7 +2,7 @@
 
 ---
 
-### EnPi
+### EnPI
 
 #### Die Software für Ihr Energie- und Klimamanagement
 
