@@ -4,7 +4,7 @@
 <br>
 Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
 <br>
-Phone: +49 176 32 827 098
+Phone: +49 151 44 941 515
 <br>
 <a href="{{ "/" | relative_url }}">www.numcamp.com</a>
 <br>
