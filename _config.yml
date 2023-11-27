@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: NUMCAMP 
-email: hello@numcamp.de
+email: hello@numcamp.com
 description: >- # this means to ignore newlines until "baseurl:" 
   Our SaaS supports your company to reach their carbon and energy saving goals.
 baseurl: "" # the subpath of your site, e.g. /blog
