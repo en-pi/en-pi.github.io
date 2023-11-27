@@ -14,14 +14,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: NUMCAMP 
-email: hello@numcamp.de
+email: hello@numcamp.com
 description: >- # this means to ignore newlines until "baseurl:"
   EnPI ist eine Software zum erreichen Ihrer Energieziele. 
   Es hilft Ihnen dabei Energieverbrauchsfunktionen und Energiekennzahlen 
   für den quantitativen Nachweis für ISO Zertifikate (z.B. 500001:2018, 500006) 
   zu erstellen. Ernergiekennzahlen jetzt!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.numcamp.de" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.numcamp.com/de" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
